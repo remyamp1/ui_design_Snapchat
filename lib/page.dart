@@ -29,7 +29,23 @@ class _FirstpageState extends State<Firstpage> {
             fontWeight: FontWeight.bold),)),
           ),
            SizedBox(height: 20,),
-           Text("Already have an account?",style: TextStyle(
+           Padding(
+             padding: const EdgeInsets.only(right: 100),
+             child: Row(
+             children: [
+               Text("Already have an account?",style: TextStyle(
+                           color: Colors.black,
+                         fontSize: 15,
+                         fontWeight: FontWeight.bold),),
+                         SizedBox(width: 5,),
+             Text("Log in",style: TextStyle(
+                           color: Colors.blue,
+                         fontSize: 15,
+                         fontWeight: FontWeight.bold),)
+             ],
+             ),
+           ),
+        /*   Text("Already have an account?",style: TextStyle(
                          color: Colors.black,
                        fontSize: 15,
                        fontWeight: FontWeight.bold),),
@@ -37,7 +53,7 @@ class _FirstpageState extends State<Firstpage> {
            Text("Log in",style: TextStyle(
                          color: Colors.blue,
                        fontSize: 15,
-                       fontWeight: FontWeight.bold),)
+                       fontWeight: FontWeight.bold),)*/
         ],
       ),
     );
